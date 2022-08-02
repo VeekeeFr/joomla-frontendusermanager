@@ -16,7 +16,7 @@ class pkg_frontendusermanagerInstallerScript
 
 	public function preflight($type, $parent) {
 
-		$this->minimum_joomla_release = $parent->get( "manifest" )->attributes()->version;
+		$this->minimum_joomla_release = $parent->getManifest()->version;
 
 		if(!$this->phpCheck())
 		{
@@ -28,10 +28,10 @@ class pkg_frontendusermanagerInstallerScript
 			return false;
 		}
 	}
+	
 	// TODO enable plugins
 	public function update()
 	{
-
 		return true;
 	}
 
@@ -107,6 +107,7 @@ class pkg_frontendusermanagerInstallerScript
 		
 		return true;
 	}
+	
 	// Manifest validation
 	function getValidManifestFile($manifest)
 	{
