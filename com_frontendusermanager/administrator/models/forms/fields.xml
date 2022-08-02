@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <fieldset>
+      <field
+		  name="profilefield"
+		  type="hepta.profilefields"
+		  fieldsGroup="core,profile"
+		  filter="safehtml"
+		  label=""
+		  description=""
+		  hint="COM_FRONTENDUSERMANAGER_FORM_LBL_CRITERIA_PROFILEFIELDS"
+		  />
+	<field name="profilecomparison" type="list" filter="safehtml" label="">
+		<option value="=">COM_FRONTENDUSERMANAGER_FORM_PROFILEFIELDS_CRITERIA_OPTION_EQUAL</option>
+		<option value="!=">COM_FRONTENDUSERMANAGER_FORM_PROFILEFIELDS_CRITERIA_OPTION_NOT_EQUAL</option>
+		<option value="contains">COM_FRONTENDUSERMANAGER_FORM_PROFILEFIELDS_CRITERIA_OPTION_CONTAINS</option>
+		<option value="doesnotcontain">COM_FRONTENDUSERMANAGER_FORM_PROFILEFIELDS_CRITERIA_OPTION_DOES_NOT_CONTAIN</option>
+		<option value="ge">COM_FRONTENDUSERMANAGER_FORM_PROFILEFIELDS_CRITERIA_OPTION_GE</option>
+		<option value="le">COM_FRONTENDUSERMANAGER_FORM_PROFILEFIELDS_CRITERIA_OPTION_LE</option>
+	</field>
+    <field
+		name="profilevalue"
+		type="text"
+		filter="safehtml"
+		label=""
+		/>
+  </fieldset>
+</form>

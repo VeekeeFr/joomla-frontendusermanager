@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_frontendusermanager</name>
+    <creationDate>October 2018</creationDate>
+    <copyright>Copyright (C) 2016-2018. Hepta Technologies SL All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <author>Carlos Cámara</author>
+    <authorEmail>carlos@hepta.es</authorEmail>
+    <authorUrl>https://extensions.hepta.es</authorUrl>
+    <version>0.1.0a12</version>
+    <description></description>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    <update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>frontendusermanager.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>layouts</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>assets</folder>
+    </files>
+   <media folder="media" destination="com_frontendusermanager">
+	<folder>footable</folder>
+    <folder>css</folder>
+    <folder>js</folder>
+   </media>
+    <languages folder="languages/site">
+			<language tag="en-GB">en-GB/en-GB.com_frontendusermanager.ini</language>
+    </languages>
+    <administration>
+        <menu img="components/com_frontendusermanager/assets/images/s_com_frontendusermanager.png" >COM_FRONTENDUSERMANAGER</menu>
+        <submenu>
+			<menu link="option=com_frontendusermanager&amp;view=criterias" view="userlist" img="components/com_frontendusermanager/assets/images/s_usermanagers.png" alt="Frontendusermanager / Criterias">COM_FRONTENDUSERMANAGER_TITLE_CRITERIAS</menu>
+			<menu link="option=com_frontendusermanager&amp;view=userlist" view="userlist" img="components/com_frontendusermanager/assets/images/s_usermanagers.png" alt="Frontendusermanager / User List">COM_FRONTENDUSERMANAGER_TITLE_USERLIST</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>frontendusermanager.php</filename>
+            <folder>controllers</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="languages/administrator">
+			<language tag="en-GB">en-GB/en-GB.com_frontendusermanager.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_frontendusermanager.sys.ini</language>
+        </languages>
+    </administration>
+    <plugins>
+        <plugin group="search" plugin="frontendusermanager"/>
+    </plugins>
+
+</extension>
+<!-- Component built by the Joomla Component Creator -->
+<!-- http://www.component-creator.com/ -->

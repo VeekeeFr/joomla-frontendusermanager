@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset label="COM_FRONTENDUSERMANAGER" name="frontendusermanager">
+		<field name="downloadid"
+			type="text"
+			label="COM_FRONTENDUSERMANAGER_DOWNLOAD_ID_LABEL"
+			description="COM_FRONTENDUSERMANAGER_DOWNLOAD_ID_DESCRIPTION"
+		/>
+		<field name="excludedgroups"
+			type="usergroup"
+			multiple="multiple"
+			label="COM_FRONTENDUSERMANAGER_EXCLUDEDGROUPS_LABEL"
+			description="COM_FRONTENDUSERMANAGER_EXCLUDEDGROUPS_DESCRIPTION"
+		/>
+    </fieldset>
+    <fieldset name="permissions" description="JCONFIG_PERMISSIONS_DESC"	label="JCONFIG_PERMISSIONS_LABEL" >
+		<field name="rules"
+			   type="rules" component="com_frontendusermanager"
+               class="inputbox" filter="rules" validate="rules"
+               label="JCONFIG_PERMISSIONS_LABEL"
+               section="component"
+		/>
+	</fieldset>
+</config>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FRONTENDUSERMANAGER_TITLE_LIST_VIEW_USERMANAGERS" option="View">
+        <message>
+                        <![CDATA[COM_FRONTENDUSERMANAGER_TITLE_LIST_VIEW_USERMANAGERS_DESC]]>
+        </message>
+	</layout>
+	<fields name="params" addfieldpath="/administrator/components/com_frontendusermanager/models/fields/">
+		<fieldset name="basic">
+			<field name="header_fields" type="hepta.profilefields"
+					multiple="1"
+					label="COM_FRONTENDUSERMANAGER_MENU_PARAMS_HEADER_FIELDS_LABEL"
+					description="COM_FRONTENDUSERMANAGER_MENU_PARAMS_HEADER_FIELDS_DESCRIPTION"
+			/>
+			<field name="excluded_fields" type="hepta.profilefields"
+					multiple="1"
+					label="COM_FRONTENDUSERMANAGER_MENU_PARAMS_EXCLUDED_FIELDS_LABEL"
+					description="COM_FRONTENDUSERMANAGER_MENU_PARAMS_EXCLUDED_FIELDS_DESCRIPTION"
+			/>
+			<field name="groups_filter" type="usergroup"
+				multiple="1"
+				label="COM_FRONTENDUSERMANAGER_MENU_PARAMS_GROUPS_FILTER_LABEL"
+				description="COM_FRONTENDUSERMANAGER_MENU_PARAMS_GROUPS_FILTER_DESCRIPTION"
+			/>
+		</fieldset>
+		
+		<fieldset name="filtering">
+			<field name="filters_to_hide"
+				type="hepta.profilefields"
+				multiple="1"
+				label="COM_FRONTENDUSERMANAGER_MENU_PARAMS_FILTERING_OPTIONS_FILTERS_TO_HIDE_LABEL"
+				description="COM_FRONTENDUSERMANAGER_MENU_PARAMS_FILTERING_OPTIONS_FILTERS_TO_HIDE_DESCRIPTION"
+			/>
+			<field
+				name="profilefields" 
+				type="subform"
+				multiple="multiple"
+				formsource="administrator/components/com_frontendusermanager/models/forms/fields.xml"
+				label="COM_FRONTENDUSERMANAGER_FORM_CRITERIA_PROFILE_VALUE_LABEL" 
+				description="COM_FRONTENDUSERMANAGER_FORM_CRITERIA_PROFILE_VALUE_DESCRIPTION"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

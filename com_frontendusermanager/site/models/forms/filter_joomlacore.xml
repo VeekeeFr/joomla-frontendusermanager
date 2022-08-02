@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="filter">
+
+        <field name="name_username_search" type="text" label="COM_USERS_FILTER_SEARCH_DESC" class="js-stools-search-string" translate="1" />
+        
+        <field
+			name="builtin-usergroup"
+			type="usergrouplist"
+			label="COM_FRONTENDUSERMANAGER_FILTER_USERGROUP_LABEL"
+			description="COM_FRONTENDUSERMANAGER_FILTER_USERGROUP_DESCRIPTION" >
+			<option value="">COM_FRONTENDUSERMANAGER_FILTER_USERGROUP_CHOOSE</option>
+		</field>
+
+		<field name="builtin-block" type="list" label="COM_FRONTENDUSERMANAGER_FILTER_BUILTIN_BLOCK" >
+			<option value=""> -- </option>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field
+			name="builtin-registerDate"
+			type="hepta.customdaterange"
+			label="COM_FRONTENDUSERMANAGER_FILTER_REGISTER_DATE_LABEL"
+			hint="COM_FRONTENDUSERMANAGER_FILTER_REGISTER_DATE_HINT"
+			ranges="today,yesterday,pastweek,pastmonth"
+			/>
+
+		<field
+			name="builtin-lastvisitDate"
+			type="hepta.customdaterange"
+			label="COM_FRONTENDUSERMANAGER_FILTER_LAST_VISIT_DATE_LABEL"
+			hint="COM_FRONTENDUSERMANAGER_FILTER_LAST_VISIT_DATE_HINT"
+			ranges="today,yesterday,pastweek,pastmonth"
+			/>
+		<field
+			name="builtin-siteLanguage"
+			type="language"
+			client="site"
+			label="COM_FRONTENDUSERMANAGER_FILTER_SITE_LANGUAGE_LABEL"
+			description=""
+			>
+			<option value="">--</option>
+		</field>
+		<field
+			name="builtin-timezone"
+			type="timezone"
+			label="COM_FRONTENDUSERMANAGER_FILTER_TIMEZONE_LABEL"
+			description="COM_FRONTENDUSERMANAGER_FILTER_TIMEZONE_DESCRIPTION"
+			>
+			<option value="">--</option>
+		</field>
+
+    </fields>
+</form>

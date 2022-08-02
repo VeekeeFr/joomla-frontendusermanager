@@ -1,0 +1,4 @@
+.fum-filters{
+	display: grid;
+	grid-template-columns: auto auto;
+}

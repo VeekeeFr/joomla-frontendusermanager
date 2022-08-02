@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FRONTENDUSERMANAGER_USER_VIEW">
+		<message>
+			<![CDATA[COM_FRONTENDUSERMANAGER_USER_VIEW_DESC_MENU]]>
+		</message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic" label="COM_FRONTENDUSERMANAGER_FIELDSET_ITEM_ID_SELECT_LABEL">
+			<field
+				name="id"
+				label="COM_FRONTENDUSERMANAGER_VIEW_SELECT_USER_LABEL"
+				require="true"
+				type="user"
+				description="COM_FRONTENDUSERMANAGER_VIEW_SELECT_USER_DESCRIPTION"
+			/>
+		</fieldset>
+	</fields>
+</metadata>
