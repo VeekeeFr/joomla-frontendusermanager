@@ -235,9 +235,8 @@ class FumHelpersForm
 		foreach ($profilePlugins as $profilePlugin)
 		{
 			JPluginHelper::importPlugin($profilePlugin->name);
-			$dispatcher = JEventDispatcher::getInstance();
 
-			$dispatcher->trigger('onContentPrepareForm', array($customForm, array()));
+			Factory::getApplication()->triggerEvent('onContentPrepareForm', array($customForm, array()));
 
 			$pluginFields = $customForm->getFieldset();
 
@@ -293,12 +292,11 @@ class FumHelpersForm
 
 	public static function loadProfileStrings()
 	{
-		// Get the dispatcher and load the users plugins.
-		$dispatcher = JEventDispatcher::getInstance();
+		// Load the users plugins.
 		JPluginHelper::importPlugin('user');
 
 		// Trigger language load.
-		$results = $dispatcher->trigger('loadLanguage');
+		$results = Factory::getApplication()->triggerEvent('loadLanguage');
 	}
 
 	/**
