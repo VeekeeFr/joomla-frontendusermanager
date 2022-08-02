@@ -2,12 +2,12 @@
 <extension type="component" version="3.0" method="upgrade">
     <name>com_frontendusermanager</name>
     <creationDate>October 2018</creationDate>
-    <copyright>Copyright (C) 2016-2018. Hepta Technologies SL All rights reserved.</copyright>
+    <copyright>Copyright (C) 2016-2018. Hepta Technologies SL All rights reserved. Changes by VeekeeFr</copyright>
     <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
     <author>Carlos Cámara</author>
     <authorEmail>carlos@hepta.es</authorEmail>
     <authorUrl>https://extensions.hepta.es</authorUrl>
-    <version>0.1.0a12</version>
+    <version>0.1.0a13</version>
     <description></description>
 
     <install>
@@ -47,7 +47,7 @@
 			<language tag="en-GB">en-GB/en-GB.com_frontendusermanager.ini</language>
     </languages>
     <administration>
-        <menu img="components/com_frontendusermanager/assets/images/s_com_frontendusermanager.png" >COM_FRONTENDUSERMANAGER</menu>
+        <menu img="components/com_frontendusermanager/assets/images/s_com_frontendusermanager.png">COM_FRONTENDUSERMANAGER</menu>
         <submenu>
 			<menu link="option=com_frontendusermanager&amp;view=criterias" view="userlist" img="components/com_frontendusermanager/assets/images/s_usermanagers.png" alt="Frontendusermanager / Criterias">COM_FRONTENDUSERMANAGER_TITLE_CRITERIAS</menu>
 			<menu link="option=com_frontendusermanager&amp;view=userlist" view="userlist" img="components/com_frontendusermanager/assets/images/s_usermanagers.png" alt="Frontendusermanager / User List">COM_FRONTENDUSERMANAGER_TITLE_USERLIST</menu>

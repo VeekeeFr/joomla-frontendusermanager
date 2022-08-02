@@ -2,11 +2,11 @@
 <extension type="package" version="3.4" method="upgrade">
 	<name>FrontendUserManager Package</name>
 	<packagename>FrontendUserManager</packagename>
-	<version>0.1.0a12</version>
+	<version>0.1.0a13</version>
 	<url>http://extensions.hepta.es</url>
 	<creationDate>January 2020</creationDate>
 	<author>Carlos Cámara</author>
-	<copyright>(C) 2016-2020 Hepta Technologies SL</copyright>
+	<copyright>(C) 2016-2022 Hepta Technologies SL. Changes by VeekeeFr</copyright>
 	<authorEmail>carlos@hepta.es</authorEmail>
 	<authorUrl>https://extensions.hepta.es</authorUrl>
 	<packager>Hepta Technologies SL</packager>
